@@ -116,6 +116,11 @@ nav a:hover {
     padding: 7px 0px;
 }
 
+.miniNav abbr {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #box-search {
     display: flex;
     align-items: center;
