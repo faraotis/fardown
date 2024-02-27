@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fardown</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="arquivos/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="headerTitle">Fardown</div>
         <div id="menu" onclick="openMenu()">
             <div></div>
@@ -47,6 +48,43 @@
     </nav>
     <div class="secPosHeader">
         <!--imagem CSS-->
+        <div class="miniNav">
+            <div id="divName">
+                <abbr title="Hello, World!">Hello!</abbr>
+            </div>
+            <div id="divWesker">
+                <abbr title="The right to be god!">Wesker</abbr>
+            </div>
+            <div id="divMorgan">
+                <abbr title="I`m dying, sister!">Mr.Morgan</abbr>
+            </div>
+            <div id="divKratos">
+                <abbr title="Plis Kratos, plis!">Kratos</abbr>
+            </div>
+            <div id="divCj">
+                <abbr title="Agaragan!">CJ</abbr>
+            </div>
+            <div id="divCassidy">
+                <abbr title="Sua cabeça tá nas nuvens, mas sua cova é aqui em baixo!">Cassidy</abbr>
+            </div>
+            <div id="divMortis">
+                <abbr title="Mortis, bringer of doom!">Mortis</abbr>
+            </div>
+            <div id="divMandy">
+                <abbr title="Mandy Kandy!">Mandy</abbr>
+            </div>
+            <div id="divNegan">
+                <abbr title="Quando eu mando meu pessoal matar seu pessoal, por matar meu pessoal, voçê mata mais o meu pessoal. E isso, não é legal.">Negan</abbr>
+            </div>
+            <form id="box-search">
+                <input type="search" placeholder="procurar">
+                <i class="material-icons">search</i>
+            </form>
+        </div>
+        <div class="aviso">
+            <h1>Aviso!</h1>
+            <p>Esse site é para uso pessoal, sem nenhum intuito de ganhar alguma renda.</p>
+        </div>
     </div>
     <main>
         <div>
@@ -150,7 +188,7 @@
                 <img src="arquivos/imagens/msi-afterburner.png">
             </a>
             <div id="div-posImg">
-                <a href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1708908427~acl=/*~hmac=ecc8da0e125b4d4a39cbb04f247f230f8b9231db63b0c5c3e19d2f664e648c0f" id="buttons">msi afterburner</a>
+                <a href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1708908427~acl=/*~hmac=ecc8da0e125b4d4a39cbb04f247f230f8b9231db63b0c5c3e19d2f664e648c0f" id="buttons">afterburner</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -182,7 +220,7 @@
                 <img src="arquivos/imagens/amd.png">
             </a>
             <div id="div-posImg">
-                <a href="https://drivers.amd.com/drivers/installer/23.40/whql/amd-software-adrenalin-edition-24.1.1-combined-minimalsetup-240122_web.exe" id="buttons">drivers amd</a>
+                <a href="https://drivers.amd.com/drivers/installer/23.40/whql/amd-software-adrenalin-edition-24.1.1-combined-minimalsetup-240122_web.exe" id="buttons">driver amd</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -198,7 +236,7 @@
                 <img src="arquivos/imagens/nvidia.png">
             </a>
             <div id="div-posImg">
-                <a href="https://www.nvidia.com.br/Download/index.aspx?lang=br" id="buttons">drivers nvidia</a>
+                <a href="https://www.nvidia.com.br/Download/index.aspx?lang=br" id="buttons">driver nvidia</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -214,7 +252,7 @@
                 <img src="arquivos/imagens/revoUnistaller.webp">
             </a>
             <div id="div-posImg">
-                <a href="https://www.revouninstaller.com/br/products/revo-uninstaller-free/" id="buttons">revo unistaller</a>
+                <a href="https://www.revouninstaller.com/br/products/revo-uninstaller-free/" id="buttons">revo uninst.</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -246,7 +284,7 @@
                 <img src="arquivos/imagens/game-save.png">
             </a>
             <div id="div-posImg">
-                <a href="https://www.gamesave-manager.com/download/153e27b3-6bf9-471c-9871-b0689ac70d0b/" id="buttons">Game Save Maganer</a>
+                <a href="https://www.gamesave-manager.com/download/153e27b3-6bf9-471c-9871-b0689ac70d0b/" id="buttons">Game Save</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -278,7 +316,7 @@
                 <img src="arquivos/imagens/Github-desktop.png">
             </a>
             <div id="div-posImg">
-                <a href="https://central.github.com/deployments/desktop/desktop/latest/win32" id="buttons">Github Desktop</a>
+                <a href="https://central.github.com/deployments/desktop/desktop/latest/win32" id="buttons">Github Desk</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -310,7 +348,7 @@
                 <img src="arquivos/imagens/sades.jpeg">
             </a>
             <div id="div-posImg">
-                <a href="https://www.sades.gg/Uploads/Driver/MICE/SADES_Battle%20Ram_Setup_v1.0.2020.rar" id="buttons">Drivers Sades</a>
+                <a href="https://www.sades.gg/Uploads/Driver/MICE/SADES_Battle%20Ram_Setup_v1.0.2020.rar" id="buttons">Driver Sades</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -342,7 +380,7 @@
                 <img src="arquivos/imagens/vlc.png">
             </a>
             <div id="div-posImg">
-                <a href="https://get.videolan.org/vlc/3.0.20/win32/vlc-3.0.20-win32.exe" id="buttons">Vlc media player</a>
+                <a href="https://get.videolan.org/vlc/3.0.20/win32/vlc-3.0.20-win32.exe" id="buttons">Vlc</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -354,11 +392,11 @@
             </div>
         </div>
         <div>
-            <a href="#">
-                <img src="arquivos/imagens/">
+            <a href="https://www.techpowerup.com/download/techpowerup-gpu-z/">
+                <img src="arquivos/imagens/gpuz.jpeg">
             </a>
             <div id="div-posImg">
-                <a href="#" id="buttons">name</a>
+                <a href="https://www.techpowerup.com/download/techpowerup-gpu-z/" id="buttons">Gpu-z</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -370,11 +408,11 @@
             </div>
         </div>
         <div>
-            <a href="#">
-                <img src="arquivos/imagens/">
+            <a href="https://pt.ldplayer.net/">
+                <img src="arquivos/imagens/ldplayer.png">
             </a>
             <div id="div-posImg">
-                <a href="#" id="buttons">name</a>
+                <a href="https://pt.ldplayer.net/" id="buttons">LDplayer</a>
                 <p>A promoção termina nunca.</p>
                 <div id="divValor">
                     <div id="desconto">-100%</div>
@@ -402,6 +440,58 @@
             </div>
         </div> -->
     </main>
+    <section id="preFooter">
+        <div class=".childs-footer">
+            <h2>Gostou do site?</h2>
+            <p>Veja no link abaixo os projetos que fiz baseando-se em empresas famosas.</p>
+            <a id="a-button" href="https://faraotis.github.io/home/" target="_blank">Ir</a>
+            <div id="displayHora">
+                <!--Elementos nas CSS-->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="childs-footer" id="div-texto">
+                <div>
+                    <abbr title="The right to be god. ~Wesker">
+                        <h1>Fardown</h1>
+                    </abbr>
+                    <abbr title="The right to be god. ~Wesker">
+                        <i class="material-icons">thumb_up</i>
+                    </abbr>
+                </div>
+                <p>
+                    Esse site é para uso pessoal, sem nenhum intuito de ganhar alguma renda. Fiz para facilitar meu dia a dia para instalar ferramentas que uso muito.
+                </p>
+            </div>
+            <div class="childs-footer">
+                <div class="div-projects">
+                    <div>
+                        <a href="https://faraotis.github.io/w3schools/" target="_blank">W3schools</a>
+                    </div>
+                    <div>
+                        <a href="https://faraotis.github.io/supercell/" target="_blank">Supercell</a>
+                    </div>
+                    <div>
+                        <a href="https://faraotis.github.io/viagens/" target="_blank">Viagens</a>
+                    </div>
+                    <div>
+                        <a href="https://faraotis.github.io/home/" target="_blank">Home</a>
+                    </div>
+                    <div>
+                        <a href="https://faraotis.github.io/login/" target="_blank">Login</a>
+                    </div>
+                    <div>
+                        <a href="https://faraotis.github.io/cordel/" target="_blank">Cordel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="bgFooterBottom">
+        <!--Cor nas CSS-->
+    </div>
     <script src="arquivos/scripts.js"></script>
 </body>
 </html>

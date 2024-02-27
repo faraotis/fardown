@@ -11,3 +11,19 @@ function openMenu() {
         navMenu.style.transform = 'translate(calc(100vw - 220px), -100%)'
     }
 }
+
+//HORA
+var display = document.querySelector('#displayHora')
+var data = new Date()
+var agoraHor = data.getHours()
+
+if (agoraHor < 12) {
+    // DIA
+    display.innerHTML = 'Volte sempre e tenha um bom dia!'
+} else if (agoraHor < 18) {
+    // TARDE
+    display.innerHTML = 'Volte sempre e tenha uma boa tarde!'
+} else {
+    // NOITE
+    display.innerHTML = 'Volte sempre e tenha uma boa noite!'
+}
