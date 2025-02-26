@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics | Faraotis</title>
+    <link rel="shortcut icon" href="arquivos/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="arquivos/styles/style.css">
+    <link rel="stylesheet" href="arquivos/styles/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">LYRICS</a>
+            </div>
+            <div class="div_color-menu">
+                <div onclick="ColorChange()">
+                    <i class="material-icons color">colorize</i>
+                </div>
+                <div>
+                    <div id="mobile-menu" onclick="AbrirMenu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="close" onclick="FecharMenu()">
+                        <i class="material-icons">close</i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu-open">
+            <div>
+                <ul id="menu-list">
+                    <li>
+                        <a href="https://faraotis.github.io/home/" target="_parent">
+                            Home Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://faraotis.github.io/fardown/" target="_parent">
+                            Fardown
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://faraotis.github.io/w3schools/" target="_parent">
+                            W3schools
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://faraotis.github.io/supercell/" target="_parent">
+                            Supercell
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://faraotis.github.io/coca-cola/" target="_parent">
+                            Coca-Cola
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="inputColor">
+            <input type="text" name="InputBack" id="InputBack" placeholder="background">
+            <input type="text" name="InputHead" id="InputHead" placeholder="header/footer">
+            <!-- <input type="text" name="InputIcon" id="InputIcon" placeholder="icones"> -->
+            <input type="submit" name="InputSubmit" id="InputSubmit" onclick="AddColor()">
+        </section>
+        <section id="section-imagens">
+            <div>
+                <a href="arquivos/p/angelsLikeYou.html">
+                    <img src="https://img.youtube.com/vi/Y0ORhLyJWuc/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">Angels Like You</h3>
+                        <p>by Myler Cyrus</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/dynasty.html">
+                    <img src="https://i.ytimg.com/vi/5-ZiKXrnvog/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">Dynasty</h3>
+                        <p>by MIIA</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/itsMyLife.html">
+                    <img src="https://i.ytimg.com/vi/vx2u5uUu3DE/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">It's My Life</h3>
+                        <p>By Bon Jovi</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/atlantis.html">
+                    <img src="https://i.ytimg.com/vi/gVAy3IZiL0s/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">Atlantis</h3>
+                        <p>by Seafret</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/sweetbutpsycho.html">
+                    <img src="https://i.ytimg.com/vi/WXBHCQYxwr0/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">Sweet But Psycho</h3>
+                        <p>by Ava Max</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/index.html">
+                    <img src="https://i.ytimg.com/vi/0KSOMA3QBU0/maxresdefault.jpg">
+                    <div>
+                        <h3 class="h3-name">Dark Horse</h3>
+                        <p>by Katy Perry</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="arquivos/p/index.html">
+                    <img src="https://th.bing.com/th?id=OVP.oDeu6OCDi4BbezNeJaTCfAHgFo&w=400&h=225&c=7&rs=1&qlt=90&o=6&pid=1.7">
+                    <div>
+                        <h3 class="h3-name">Play Hard</h3>
+                        <p>by David Guetta</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/280px-FullMoon2010.jpg">
+                    <div>
+                        <h3 class="h3-name">NAME</h3>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/280px-FullMoon2010.jpg">
+                    <div>
+                        <h3 class="h3-name">NAME</h3>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/280px-FullMoon2010.jpg">
+                    <div>
+                        <h3 class="h3-name">NAME</h3>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="container" id="primeira-div-footer">
+                <div class="div-logos-e-lojas">
+                    <div id="icones-footer">
+                        <div id="p-footer">
+                            <p>Follow us on</p>
+                        </div>
+                        <div class="imgs-redes">
+                            <a href="#">
+                                <img src="arquivos/imagens/icone-yt.png" alt="youtube">
+                            </a>
+                            <a href="#">
+                                <img src="arquivos/imagens/icone-face.png" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="arquivos/imagens/icone-insta.png" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="arquivos/imagens/icone-twi.png" alt="X/twitter">
+                            </a>
+                            <a href="#">
+                                <img src="arquivos/imagens/icone-linke.png" alt="linkedin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-logos-e-lojas">
+                    <div id="lojas-footer">
+                        <div id="p-footer" class="p-download-footer">
+                            <p>Download our games from</p>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="arquivos/imagens/appstore.png" alt="app-store">
+                            </a>
+                            <a href="#">
+                                <img src="arquivos/imagens/googleplay.png" alt="google-play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="links-footer">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Parent's Guide</a>
+                <a href="#">Safe and Fair Play Policy</a>
+                <a href="#">Other Legal Docs</a>
+                <a href="#">For Media</a>
+                <a href="#">Manage Cookies</a>
+            </div>
+            <div class="container" id="ultima-div-footer">
+                <div>
+                    <p>
+                        Enterprise Oy <br>
+                        Contact <br>
+                        Number <br>
+                        Locality <br>
+                    </p>
+                </div>
+                <div class="logo">
+                    <a href="#">LYRICS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="arquivos/script.js"></script>
+</body>
+</html>
