@@ -1,15 +1,15 @@
 let divMenu = document.querySelector('#menu')
-let navMenu = document.querySelector('nav')
+let navMenu = document.querySelector('menu')
 var cont = 1
 const inputSearch = document.getElementById('search')
 
 function openMenu() {
     cont++
-    navMenu.style.transitionDuration = '0.7s'
+    navMenu.style.transitionDuration = '0.3s'
     if(cont%2 == 0) {
-        navMenu.style.transform = 'translate(calc(100vw - 220px), 0%)'
+        navMenu.style.transform = 'translate(calc(100vw - 315px), 68%)'
     } else {
-        navMenu.style.transform = 'translate(calc(100vw - 220px), -100%)'
+        navMenu.style.transform = 'translate(calc(100vw - 315px), -68%)'
     }
 }
 
@@ -65,4 +65,24 @@ function formatString(value) {
         .trim()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
+}
+
+
+// colors
+var body = document.getElementsByTagName('body')[0]
+var contColor = 0
+var totalPaletas = 3 // Quantidade de paletas
+
+function ColorChange() {
+    contColor += 1
+    if (contColor > totalPaletas) {
+        contColor = 1
+    }
+    if(contColor == 5) {
+        body.classList.add("paleta" + Number(contColor + 1))
+        body.classList.remove("paleta" + contColor)
+    } if(contColor != 5) {
+        body.classList.add("paleta" + Number(contColor + 1))
+        body.classList.remove("paleta" + contColor)
+    }
 }

@@ -6,50 +6,70 @@
     box-sizing: border-box;
 }
 
+
+/* COLORS - PALETAS */
+
+:root {
+    --nav: #4465c1c6;
+    --background_footer: #1A2A3B;
+    --header: #1A2A3B;
+    --icons: white;
+    --aviso: #15588e8f;
+    --color-text-footer: #969EAB;
+    --foto: url('imagens/background/setup-gamer.jpg');
+    --botton: linear-gradient(to bottom, #9FBD07, #4C6B22);
+}
+
+.paleta2 {
+    --nav: #fb4a9d9f;
+    --background_footer: #FFF;
+    --header: #000;
+    --icons: #FB4A9D;
+    --aviso: #b1427670;
+    --color-text-footer: #000;
+    --foto: url('imagens/background/astronomy.webp');
+    --botton: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
+} .paleta3 {
+    --nav: #388d25e5;
+    --background_footer: #FFF;
+    --header: #000;
+    --icons: #9FBD07;
+    --aviso: #388d2575;
+    --color-text-footer: #000;
+    --foto: url('imagens/background/nature1.jpeg');
+    --botton: linear-gradient(to bottom, #9FBD07, #4C6B22);
+}
+
+#colorButton {
+    cursor: pointer;
+}
+
 body {
-    background-color: #1A2A3B;
+    position: relative;
+    background-color: var(--background_footer);
     color: black;
     height: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
 header {
-    position: relative;
+    position: sticky;
     top: 0px;
-    background-color: #171D25;
-    color: #D9DADB;
+    background-color: var(--header);
+    color: var(--icons);
     height: 105px;
-    padding: 15px;
+    padding: 15px 30px;
     font-size: 1.1em;
     z-index: 1;
-
+    border-bottom: 1px solid var(--icons);
     display: flex;
     justify-content: space-between;
     gap: 100px;
     align-items: center;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-header a {
-    text-decoration: none;
-    color: #D9DADB;
-}
-
-header a:hover {
-    text-decoration: underline;
-    color: #b3b3b3;
-}
-
-#headerMais {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    display: none;
-}
-
-#headerTitle {
+    letter-spacing: 4px;
+} header h1 {
     font-size: 1.8em;
 }
 
@@ -59,67 +79,62 @@ header a:hover {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-}
-
-#menu div {
+} #menu div {
     height: 2px;
-    background-color: #D9DADB;
+    background-color: var(--icons);
     width: 28px;
+} #menu_and_color {
+    display: flex;
+    gap: 40px;
 }
 
-nav {
+menu {
     position: absolute;
-    transform: translate(calc(100vw - 220px), -100%);
-    position: absolute;
+    transform: translate(calc(100vw - 315px), -68%);
     height: 300px;
-    width: 200px;
-    background-color: #171D25;
+    width: fit-content;
+    background-color: var(--header);
     display: flex;
     flex-flow: nowrap column;
     justify-content: space-between;
     padding: 50px 20px;
     font-weight: bold;
     z-index: 0;
-}
-
-nav a {
-    color: #D9DADB;
+} menu a {
+    color: var(--text);
     font-size: 1.6em;
     text-decoration: none;
-}
-
-nav a:hover {
+} menu a:hover {
     text-decoration: underline;
     color: #b3b3b3;
 }
 
 .secPosHeader {
     height: 430px;
-    background: black url('imagens/background/setup-gamer.jpg') no-repeat center scroll;
+    background: black var(--foto) no-repeat center scroll;
     background-size: cover;
     padding: 30px 10px;
 }
 
-.miniNav {
+nav {
     display: flex;
     align-items: center;
     height: 40px;
     justify-content: space-between;
     gap: 0px 30px;
     padding: 0px 10px;
-    background-color: #4465c1c6;
+    background-color: var(--nav);
     color: white;
-    font-weight: bold;
     text-shadow: 1px 1px 3px #0000008b;
-}
-
-.miniNav > div {
+} nav > div {
     padding: 0px 0px;
-}
-
-.miniNav abbr {
+} nav a {
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-decoration: none;
-    cursor: pointer;
 }
 
 #box-search {
@@ -129,28 +144,30 @@ nav a:hover {
 }
 
 #box-search input {
-    height: 70%;
+    height: 80%;
+    width: max-content;
     padding: 0px 0px 0px 10px;
-    background-color: #316282;
-    border: none;
+    background-color: var(--icons);
+    border: 1px solid var(--header);
+    border-radius: 10px;
 }
 
 #box-search input::placeholder {
     font-size: 1.2em;
     letter-spacing: 1px;
-    color: #171D25;
+    color: var(--header);
 }
 
 #box-search i {
     margin-left: -27px;
-    background-color: #2c94c1;
-    color: #224359;
+    color: var(--header);
     text-shadow: none;
 }
 
 #no_results {
     display: none;
-    background-color: white;
+    background-color: var(--aviso);
+    color: var(--icons);
     letter-spacing: 1px;
     font: normal normal 1.2em sans-serif;
     width: 90%;
@@ -164,7 +181,7 @@ nav a:hover {
     max-width: 85%;
     margin: 70px auto 0px auto;
     padding: 20px;
-    background-color: #15588e8f;
+    background-color: var(--aviso);
     color: white;
     font-size: 1.3em;
     text-align: center;
@@ -172,7 +189,8 @@ nav a:hover {
 }
 
 main {
-    background-color: #1A2A3B;
+    /* background-color: #1A2A3B; */
+    background-color: var(--background_footer);
     padding: 70px 0px;
     margin: auto;
     max-width: 980px;
@@ -186,6 +204,7 @@ main {
 main > div {
     background-color: white;
     color: white;
+    border: 1px solid #247EA6;
     width: 38vw;
     max-width: 230px;
     min-height: 330px;
@@ -209,29 +228,21 @@ main img {
     padding: 10px 10px 10px 10px;
     width: 100%;
     min-height: 90px;
-}
-
-#buttons {
+} #buttons {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3em;
     text-transform: uppercase;
     color: #D9DADB;
-}
-
-#div-posImg p {
+} #div-posImg p {
     color: #ACDBF5;
-}
-
-#divValor {
+} #divValor {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 170px;
     height: 40px;
-}
-
-#desconto, #valor {
+} #desconto, #valor {
     height: 100%;
     width: 100%;
     color: #BEEE11;
@@ -240,27 +251,41 @@ main img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#desconto {
+} #desconto {
     font-size: 1.5em;
     font-weight: bold;
     background-color: #4C6B22;
-}
-
-#valor {
+} #valor {
     background-color: #344654;
-}
-
-del {
+} del {
     color: #627989;
 }
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #171A21;
-    color: #969EAB;
+    /* background-color: #171A21; */
+    background-color: var(--header_footer);
+    color: var(--color-text-footer);
     padding: 40px;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#icones-redes {
+    display: flex;
+    gap: 20px;
+}
+
+#icones-redes img {
+    height: 30px;
+}
+
+#icones-redes a {
+    text-decoration: none;
 }
 
 #preFooter {
@@ -279,21 +304,22 @@ footer {
 }
 
 #preFooter h2 {
-    color: #23c1fa;
+    /* color: #23c1fa; */
+    color: var(--icons);
 }
 
 #a-button {
     width: 110px;
     height: 30px;
     border-radius: 3px;
-    border: 1px solid #5e832b;
+    border: 1px solid var(--botton);
     text-decoration: none;
     padding: 4px;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: bold;
-    color: #BEEE11;
-    background-image: linear-gradient(to bottom, #9FBD07, #4C6B22);
+    color: black;
+    background-image: var(--botton);
 }
 
 #displayHora {
@@ -328,15 +354,17 @@ footer {
     background-color: #969EAB;
     padding: 0px 5px;
     font-size: 1.5em;
-    color: #171D25;
+    /* color: #171D25; */
+    color: var(--background_footer);
     width: fit-content;
 }
 
 #div-texto abbr {
     cursor: pointer;
+    color: #969EAB;
 }
 
-.div-projects {
+.foruns {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -345,67 +373,62 @@ footer {
     padding: 20px 10px;
 }
 
-.div-projects > div:not(:last-child) {
+.foruns > div:not(:last-child) {
     border-bottom: 1px solid #353538;
 }
 
-.div-projects > div {
+.foruns > div {
     width: 150px;
     padding: 10px;
     text-align: center;
 }
 
-.div-projects a {
-    color: #c5cedd;
-    font-weight: bold;
+.foruns a {
+    color: var(--color-text-footer);
+    font-weight: normal;
     text-decoration: none;
 }
 
-.div-projects a:hover {
+.foruns a:hover {
     text-decoration: underline;
 }
 
 #bgFooterBottom {
     height: 40px;
     width: 100%;
-    background-color: #1B2838;
+    background-color: #000;
 }
 
 @media screen and (min-width: 900px) {
-    #headerMais {
-        display: flex;
-    }
-
     #menu {
         display: none;
     }
 
-    nav {
+    menu {
         display: none;
     }
 }
 @media screen and (min-width: 1000px) {
     .secPosHeader {
         height: 430px;
-        max-width: 1150px;
+        max-width: 1350px;
         margin: auto;
     }
 }
 
-/*mediaquery .miniNav*/ 
-#divName, #divKratos, #divCj, #divCassidy, #divMortis, #divMandy, #divNegan{display: none;}
+/* mediaquery .miniNav  */
+#navOne, #navTwo, #navThree, #navFour, #navFive, #navSix, #navSeven{display: none;}
 
-@media screen and (min-width: 350px) {
-    #divName {display: none;}
-}
-@media screen and (min-width: 540px) {
-    #divKratos {display: block;}
-}
-@media screen and (min-width: 600px) {
-    #divCj {display: block;}
-}
-@media screen and (min-width: 695px) {
-    #divCassidy {display: block;}
+@media screen and (min-width: 450px) {
+    #navOne {display: block;}
+} @media screen and (min-width: 550px) {
+    #navTwo {display: block;}
+} @media screen and (min-width: 660px) {
+    #navThree {display: block;}
+} @media screen and (min-width: 770px) {
+    #navFour {display: block;}
+} @media screen and (min-width:900px) {
+    #navFive {display: block;}
 }
 @media screen and (min-width: 767px) {
     main > div {
@@ -413,25 +436,23 @@ footer {
     }
 }
 @media screen and (min-width: 781px) {
-    #divMortis {display: block;}
-
-    .div-projects {
+    .foruns {
         display: flex;
         flex-flow: row nowrap;
     }
     
-    .div-projects > div {
+    .foruns > div {
         width: 100%;
     }
 
-    .div-projects > div:not(:last-child) {
+    .foruns > div:not(:last-child) {
         border-right: 1px solid #353538;
         border-bottom: none;
     }
 }
 @media screen and (min-width: 861px) {
-    #divMandy {display: block;}
+    #navSix {display: block;}
 }
 @media screen and (min-width: 942px) {
-    #divNegan {display: block;}
+    #navSeven {display: block;}
 }

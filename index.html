@@ -10,89 +10,75 @@
 </head>
 <body>
     <header id="header">
-        <div id="headerTitle">Fardown</div>
-        <div id="menu" onclick="openMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div id="headerMais">
-            <div>
-                <a href="https://faraotis.github.io/w3schools/" target="_parent">w3schools</a>
+        <h1>Fardown</h1>
+        <div id="menu_and_color">
+            <div id="colorButton" onclick="ColorChange()">
+                <i class="material-icons color">colorize</i>
             </div>
-            <div>
-                <a href="https://faraotis.github.io/supercell/" target="_parent">supercell</a>
-            </div>
-
-            <div>
-                <a href="https://faraotis.github.io/viagens/" target="_parent">viagens</a>
-            </div>
-            <div>
-                <a href="https://faraotis.github.io/home/" target="_parent">home</a>
-            </div>
-            <div>
-                <a href="p/personalize/index.html" target="_parent">personalize</a>
+            <div id="menu" onclick="openMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
+        <menu>
+            <div id="navOne">
+                <a href="#" target="_parent">Home</a>
+            </div>
+            <div id="navTwo">
+                <a href="https://faraotis.github.io/home/" target="_parent">Portifólio</a>
+            </div>
+            <div id="navThree">
+                <a href="p/personalize/index.html" target="_parent">Personalize</a>
+            </div> 
+            <div id="navFour">
+                <a href="p/personalize/arquivos/p/music/index.html" target="_parent">Lyrics</a>
+            </div> 
+            <div id="navFive">
+                <a href="#redes" target="_parent">Redes</a>
+            </div> 
+            <!-- <div id="navSix">
+                Desen
+            </div> 
+            <div id="navSeven">
+                Desen
+            </div>  -->
+        </menu>
     </header>
-    <nav>
-        <div>
-            <a href="https://faraotis.github.io/w3schools/" target="_parent">w3schools</a>
-        </div>
-        <div>
-            <a href="https://faraotis.github.io/supercell/" target="_parent">supercell</a>
-        </div>
-
-        <div>
-            <a href="https://faraotis.github.io/viagens/" target="_parent">viagens</a>
-        </div>
-        <div>
-            <a href="https://faraotis.github.io/home/" target="_parent">home</a>
-        </div>
-        <div>
-            <a href="p/personalize/index.html" target="_parent">personalize</a>
-        </div>
-    </nav>
     <div class="secPosHeader">
         <!--imagem CSS-->
-        <div class="miniNav">
-            <div id="divName">
-                <abbr title="Hello, World!">Hello!</abbr>
+        <nav>
+            <div id="navOne">
+                <a href="#" target="_parent">Home</a>
             </div>
-            <div id="divWesker">
-                <abbr title="The right to be god!">Wesker</abbr>
+            <div id="navTwo">
+                <a href="https://faraotis.github.io/home/" target="_parent">Portifólio</a>
             </div>
-            <div id="divMorgan">
-                <abbr title="I`m dying, sister!">Mr.Morgan</abbr>
-            </div>
-            <div id="divKratos">
-                <abbr title="Plis Kratos, plis!">Kratos</abbr>
-            </div>
-            <div id="divCj">
-                <abbr title="Agaragan!">CJ</abbr>
-            </div>
-            <div id="divCassidy">
-                <abbr title="Sua cabeça tá nas nuvens, mas sua cova é aqui em baixo!">Cassidy</abbr>
-            </div>
-            <div id="divMortis">
-                <abbr title="Mortis, bringer of doom!">Mortis</abbr>
-            </div>
-            <div id="divMandy">
-                <abbr title="Mandy Kandy!">Mandy</abbr>
-            </div>
-            <div id="divNegan">
-                <abbr title="Quando eu mando meu pessoal matar seu pessoal, por matar meu pessoal, voçê mata mais o meu pessoal. E isso, não é legal.">Negan</abbr>
-            </div>
+            <div id="navThree">
+                <a href="p/personalize/index.html" target="_parent">Personalize</a>
+            </div> 
+            <div id="navFour">
+                <a href="p/personalize/arquivos/p/music/index.html" target="_parent">Lyrics</a>
+            </div> 
+            <div id="navFive">
+                <a href="#redes" target="_parent">Redes</a>
+            </div> 
+            <!-- <div id="navSix">
+                Desen
+            </div> 
+            <div id="navSeven">
+                Desen
+            </div>  -->
             <div id="box-search">
                 <input 
                     id="search"
                     class="input-field"
                     type="text"
-                    placeholder="pesquisar"
+                    placeholder="buscar apps"
                 >
                 <i class="material-icons">search</i>
             </div>
-        </div>
+        </nav>
         <div class="aviso">
             <h1>Aviso!</h1>
             <p>Esse site é para uso pessoal, sem nenhum intuito de ganhar alguma renda.</p>
@@ -483,8 +469,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- <div class="item">
             <a href="#" target="_blank" >
                 <img src="arquivos/imagens/">
@@ -501,7 +485,6 @@
                 </div>
             </div>
         </div> -->
-
         <spam id="no_results">
             <p>Nenhum resultado encontrado.</p>
         </spam>
@@ -511,6 +494,32 @@
             <h2>Gostou do site?</h2>
             <p>Veja no link abaixo os projetos que fiz baseando-se em empresas famosas.</p>
             <a id="a-button" href="https://faraotis.github.io/home/" target="_blank">Ir</a>
+            <div id="redes">
+                <div id="p-redes">
+                    <p>Follow us on</p>
+                </div>
+                <div id="icones-redes">
+                    <a href="#">
+                        <img src="arquivos/imagens/redes/icone-yt.png" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="arquivos/imagens/redes/icone-face.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="arquivos/imagens/redes/icone-insta.png" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="arquivos/imagens/redes/icone-twi.png" alt="X/twitter">
+                    </a>
+                    <!-- <a href="#">
+                        <img src="arquivos/imagens/redes/icone-linke.png" alt="linkedin">
+                    </a>
+                    <a href="#">
+                        <img src="arquivos/imagens/redes/icone-glass.png" alt="glassdoor">
+                    </a> -->
+                </div>
+            </div>
+
             <div id="displayHora">
                 <!--Elementos nas CSS-->
             </div>
@@ -527,29 +536,38 @@
                         <i class="material-icons">thumb_up</i>
                     </abbr>
                 </div>
+                <!-- <p>
+                    Este site depende de anúncios para continuar funcionando.
+                </p>
                 <p>
-                    Esse site é para uso pessoal, sem nenhum intuito de ganhar alguma renda.
+                    Se preferir não desativar o AdBlock, considere apoiar de outras formas, como compartilhando nosso conteúdo ou nos seguindo nas redes sociais.
+                </p>
+                <p>
+                    Qualquer forma de apoio faz diferença!
+                </p> -->
+                <p>
+                    "Faça oque puder, com o que tiver, onde estiver" 
+                </p>
+                <p>
+                    ~THEODORE ROSEVELT
                 </p>
             </div>
             <div class="childs-footer">
-                <div class="div-projects">
+                <div class="foruns">
                     <div>
-                        <a href="https://faraotis.github.io/w3schools/" target="_blank">W3schools</a>
+                        <a href="#redes" target="_parent">Redes</a>
                     </div>
                     <div>
-                        <a href="https://faraotis.github.io/supercell/" target="_blank">Supercell</a>
+                        <a href="https://faraotis.github.io/home/" target="_parent">Portifólio</a>
                     </div>
                     <div>
-                        <a href="https://faraotis.github.io/viagens/" target="_blank">Viagens</a>
+                        <a href="#" target="_parent">Contato</a>
                     </div>
                     <div>
-                        <a href="https://faraotis.github.io/home/" target="_blank">Home</a>
+                        <a href="#" target="_parent">Termos de uso</a>
                     </div>
                     <div>
-                        <a href="https://faraotis.github.io/login/" target="_blank">Login</a>
-                    </div>
-                    <div>
-                        <a href="https://faraotis.github.io/cordel/" target="_blank">Cordel</a>
+                        <a href="#" target="_parent">Política de Privacidade</a>
                     </div>
                 </div>
             </div>
