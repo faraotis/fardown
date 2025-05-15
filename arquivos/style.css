@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /* COLORS - PALETAS */
 
 :root {
@@ -70,7 +69,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 4px;
 } header h1 {
+    color: var(--botton);
     font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #menu {
@@ -121,31 +124,43 @@ nav {
     align-items: center;
     height: 40px;
     justify-content: space-between;
-    gap: 0px 30px;
-    padding: 0px 10px;
+    gap: 10px;
+    padding: 0px 10px 0px 0px;
     background-color: var(--nav);
     color: white;
     text-shadow: 1px 1px 3px #0000008b;
-} nav > div {
-    padding: 0px 0px;
+} nav div {
+    width: 100%;
+    height: 40px;
+    
 } nav a {
+    padding: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
     text-decoration: none;
+} nav a:hover {
+    color: var(--nav);
+    /* background-color: white; */
+} nav div:not(:last-child):hover {
+    background-color: white;
 }
 
 #box-search {
-    height: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
 }
 
 #box-search input {
     height: 80%;
-    width: max-content;
+    width: 100%;
     padding: 0px 0px 0px 10px;
     background-color: var(--icons);
     border: 1px solid var(--header);
