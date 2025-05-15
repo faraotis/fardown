@@ -16,7 +16,7 @@
     --icons: white;
     --aviso: #15588e8f;
     --color-text-footer: #969EAB;
-    --foto: url('imagens/background/setup-gamer.jpg');
+    --foto: url('imagens/background/setup-gamer.webp');
     --botton: linear-gradient(to bottom, #9FBD07, #4C6B22);
 }
 
@@ -36,7 +36,7 @@
     --icons: #9FBD07;
     --aviso: #388d2575;
     --color-text-footer: #000;
-    --foto: url('imagens/background/nature1.jpeg');
+    --foto: url('imagens/background/nature.webp');
     --botton: linear-gradient(to bottom, #9FBD07, #4C6B22);
 }
 
