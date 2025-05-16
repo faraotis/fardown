@@ -9,26 +9,18 @@
 /* COLORS - PALETAS */
 
 :root {
-    --nav: #fb4a9d9f;
-    --navback: #003079;
-    --background_footer: #FFF;
+    --background_and_footer: #FFF;
     --header: #000;
     --icons: #FB4A9D;
-    --aviso: #b1427670;
-    --color-text-footer: #000;
-    --foto: url('imagens/background/astronomy.webp');
+    --text-footer: #000;
     --botton: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
 }
 
 .paleta2 {
-    --nav: #388d25e5;
-    --navback: #410b80;
-    --background_footer: #FFF;
+    --background_and_footer: #FFF;
     --header: #000;
-    --icons: #9FBD07;
-    --aviso: #388d2575;
-    --color-text-footer: #000;
-    --foto: url('imagens/background/nature.webp');
+    --icons: #388d25e5;
+    --text-footer: #000;
     --botton: linear-gradient(to bottom, #9FBD07, #4C6B22);
 }
 
@@ -38,7 +30,7 @@
 
 body {
     position: relative;
-    background-color: var(--background_footer);
+    background-color: var(--background_and_footer);
     color: black;
     height: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -48,25 +40,28 @@ header {
     position: sticky;
     top: 0px;
     background-color: var(--header);
+    border-bottom: 3px solid var(--icons);
     color: var(--icons);
     height: 105px;
     padding: 15px 30px;
     font-size: 1.1em;
     z-index: 1;
-    border-bottom: 1px solid var(--icons);
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
+} header > div {
+    margin: auto;
+    max-width: 880px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 } header h1 {
     color: var(--botton);
     font-size: 1.8em;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 #menu {
@@ -106,23 +101,23 @@ menu {
 }
 
 .secPosHeader {
-    height: 100px;
-    /* background: black var(--foto) no-repeat center scroll;
-    background-size: cover; */
-    background-color: var(--navback);
-    padding: 30px 10px;
+    
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    
     height: 40px;
-    justify-content: space-between;
+    
     gap: 10px;
-    padding: 0px 10px 0px 0px;
-    background-color: var(--nav);
+    background-color: var(--icons);
     color: white;
     text-shadow: 1px 1px 3px #0000008b;
+} nav > div {
+    margin: auto;
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 } nav div {
     width: 100%;
     height: 40px;
@@ -139,8 +134,8 @@ nav {
     letter-spacing: 2px;
     text-decoration: none;
 } nav a:hover {
-    color: var(--nav);
-} nav div:hover {
+    color: var(--icons);
+} nav div div:hover {
     background-color: white;
 } /* nav div:not(:last-child):hover {
     background-color: white;
@@ -187,10 +182,10 @@ nav {
 
 main {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background_footer);
+    background-color: var(--background_and_footer);
     padding: 70px 20px;
     margin: auto;
-    max-width: 980px;
+    max-width: 1080px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,7 +218,7 @@ main > section {
 footer {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--header_footer);
-    color: var(--color-text-footer);
+    color: var(--text-footer);
     padding: 40px;
 }
 
@@ -242,7 +237,7 @@ footer {
 
 #preFooter {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: var(--header);
     color: #969EAB;
     text-align: center;
     padding: 40px 0px;
@@ -270,14 +265,14 @@ footer {
 }
 
 .childs-footer {
-    max-width: 815px;
+    max-width: 920px;
     margin: auto;
 }
 
 #div-texto {
     padding: 10px 0px;
-    border-top: 1px solid #353538;
-    border-bottom: 1px solid #353538;
+    border-top: 1px solid var(--text-footer);
+    border-bottom: 1px solid var(--text-footer);
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
@@ -294,7 +289,7 @@ footer {
     padding: 0px 5px;
     font-size: 1.5em;
     /* color: #171D25; */
-    color: var(--background_footer);
+    color: var(--background_and_footer);
     width: fit-content;
 }
 
@@ -311,13 +306,13 @@ footer {
     justify-content: space-between;
     padding: 20px 10px;
 } .foruns > div:not(:last-child) {
-    border-bottom: 1px solid #353538;
+    border-bottom: 1px solid var(--text-footer);
 } .foruns > div {
     width: 150px;
     padding: 10px;
     text-align: center;
 } .foruns a {
-    color: var(--color-text-footer);
+    color: var(--text-footer);
     font-weight: normal;
     text-decoration: none;
 } .foruns a:hover {
@@ -327,61 +322,52 @@ footer {
 #bgFooterBottom {
     height: 40px;
     width: 100%;
-    background-color: #000;
+    background-color: var(--header);
 }
 
-@media screen and (min-width: 900px) {
+/* mediaquery .miniNav  */
+#navOne, #navTwo, #navThree {display: none;}
+nav {
+    display: none;
+}
+
+@media screen and (min-width: 450px) {
+    main {
+        padding: 70px 30px;
+    }
+} @media screen and (min-width: 550px) {
+    nav {
+        display: flex;
+    }
+
+    #navOne {display: block;}
+    #navTwo {display: block;}
+    #navThree {display: block;}
+    main {
+        padding: 70px 50px;
+    }
+} @media screen and (min-width: 660px) {
+    main {
+        padding: 70px 70px;
+    }
+} @media screen and (min-width: 770px) {
+    main {
+        padding: 70px 90px;
+    }
+} @media screen and (min-width: 781px) {
+    .foruns {
+        display: flex;
+        flex-flow: row nowrap;
+    } .foruns > div {
+        width: 100%;
+    } .foruns > div:not(:last-child) {
+        border-right: 1px solid var(--text-footer);
+        border-bottom: none;
+    }
+} @media screen and (min-width: 900px) {
     #menu {
         display: none;
     } menu {
         display: none;
     }
-}
-
-/* mediaquery .miniNav  */
-#navOne, #navTwo, #navThree, #navFour, #navFive, #navSix, #navSeven{display: none;}
-
-@media screen and (min-width: 450px) {
-    #navOne {display: block;}
-    main {
-        padding: 70px 30px;
-    }
-} @media screen and (min-width: 550px) {
-    #navTwo {display: block;}
-    main {
-        padding: 70px 50px;
-    }
-} @media screen and (min-width: 660px) {
-    #navThree {display: block;}
-    main {
-        padding: 70px 70px;
-    }
-} @media screen and (min-width: 770px) {
-    #navFour {display: block;}
-    main {
-        padding: 70px 90px;
-    }
-} @media screen and (min-width:900px) {
-    #navFive {display: block;}
-}
-@media screen and (min-width: 781px) {
-    .foruns {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    
-    .foruns > div {
-        width: 100%;
-    }
-
-    .foruns > div:not(:last-child) {
-        border-right: 1px solid #353538;
-        border-bottom: none;
-    }
-}
-@media screen and (min-width: 861px) {
-    #navSix {display: block;}
-}
-@media screen and (min-width: 942px) {
-    #navSeven {display: block;}
 }
